@@ -1,6 +1,7 @@
 import { Button } from "../ui/button";
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "@/public/logo.svg";
 import { navbarLink } from "@/data/data";
 
@@ -14,7 +15,9 @@ const Navbar: FC = () => {
       <nav>
         <ol className="flex items-center gap-11">
           {navbarLink.map((link) => (
-            <li className="link">{link.title}</li>
+            <Link href={`/${link.link}`} key={link.title}>
+              <li className="link">{link.title}</li>
+            </Link>
           ))}
         </ol>
       </nav>

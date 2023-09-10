@@ -73,10 +73,13 @@
   body {
     @apply bg-bg text-white;
   }
+  h1 {
+    @apply font-bold text-[65px] leading-[64px];
+  }
 }
 @layer components {
   .link {
-    @apply font-semibold text-xl;
+    @apply font-semibold text-xl hover:text-orange;
   }
 }
 @layer utilities {
