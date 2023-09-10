@@ -16,6 +16,11 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "project-stars": "url('/project-stars.svg')",
+        "hero-brush": "url('/hero-brush.png')",
+        "project-brush": "url('/project-brush.png')",
+      },
       colors: {
         blue: "#4BE1F4",
         pink: "#F87388",
@@ -67,6 +72,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "move-up": {
+          "0%": { transform: "translateY(0)" }, // Исходное положение (на месте)
+          "100%": { transform: "translateY(-100%)" }, // Положение через 2 секунды (-100% по вертикали)
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -77,6 +86,7 @@ module.exports = {
         },
       },
       animation: {
+        "move-up": "move-up 10s linear", // Анимация движения вверх в течение 2 секунд
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

@@ -6,6 +6,7 @@ const Hero: FC = () => {
     <section className="container pt-[130px] flex flex-col gap-14 items-center text-center px-72">
       <div className="relative flex flex-col gap-4">
         <h1>The easiest way to start a DAO</h1>
+        <div className="absolute w-full h-10 bg-hero-brush bg-no-repeat top-1/2 left-16 -z-10 translate-x-1/2 transform" />
         <p className="px-10">
           An all-in-one platform to start, manage and grow a decentralized
           autonomous organization

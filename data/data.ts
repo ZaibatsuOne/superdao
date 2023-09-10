@@ -22,3 +22,13 @@ export const navbarLink: ILink[] = [
     link: "#",
   },
 ];
+
+export const projectCategory: string[] = [
+  "Investment DAO",
+  "Startup DAO",
+  "Service DAO",
+  "Community DAO",
+  "Impact DAO",
+  "DeFi DAO",
+  "+ More",
+];

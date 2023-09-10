@@ -74,7 +74,10 @@
     @apply bg-bg text-white;
   }
   h1 {
-    @apply font-bold text-[65px] leading-[64px];
+    @apply font-bold text-6xl leading-[64px];
+  }
+  h2 {
+    @apply font-bold text-5xl;
   }
 }
 @layer components {
