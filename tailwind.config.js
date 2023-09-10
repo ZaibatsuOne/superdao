@@ -72,6 +72,12 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "most-pulse": {
+          "100%": {
+            opacity: 0,
+            transform: "scale(2)",
+          },
+        },
         "move-up": {
           "0%": { transform: "translateY(0)" }, // Исходное положение (на месте)
           "100%": { transform: "translateY(-100%)" }, // Положение через 2 секунды (-100% по вертикали)
@@ -86,6 +92,7 @@ module.exports = {
         },
       },
       animation: {
+        "most-pulse": "most-pulse 4s ease-out infinite",
         "move-up": "move-up 10s linear forwards", // Анимация движения вверх в течение 2 секунд
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
