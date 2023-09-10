@@ -86,7 +86,7 @@ module.exports = {
         },
       },
       animation: {
-        "move-up": "move-up 10s linear", // Анимация движения вверх в течение 2 секунд
+        "move-up": "move-up 10s linear forwards", // Анимация движения вверх в течение 2 секунд
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
