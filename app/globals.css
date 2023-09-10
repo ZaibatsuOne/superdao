@@ -71,10 +71,14 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-bg text-white;
   }
 }
-
+@layer components {
+  .link {
+    @apply font-semibold text-xl;
+  }
+}
 @layer utilities {
   .container {
     @apply max-w-[1140px] mx-auto;
