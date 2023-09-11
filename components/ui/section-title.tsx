@@ -20,7 +20,7 @@ const SectionTitle: FC<PropsWithChildren<Props>> = ({ variant, children }) => {
     }
   };
   return (
-    <div className="relative">
+    <div className="relative text-center">
       <h2>{children}</h2>
       {switchBrush(variant)}
     </div>

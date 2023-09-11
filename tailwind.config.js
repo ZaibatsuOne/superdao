@@ -26,6 +26,7 @@ module.exports = {
         "areaWork-brush": "url('/areaWork-brush.png')",
         "project-brush": "url('/project-brush.png')",
         "workWith-brush": "url('/workWith-brush.png')",
+        lights: "url('/lights.png')",
       },
       colors: {
         blue: "#4BE1F4",
@@ -84,6 +85,10 @@ module.exports = {
             transform: "scale(2)",
           },
         },
+        "move-left": {
+          "0%": { transform: "translateX(0)" }, // Исходное положение (на месте)
+          "100%": { transform: "translateX(-100%)" }, // Положение через 2 секунды (-100% по вертикали)
+        },
         "move-up": {
           "0%": { transform: "translateY(0)" }, // Исходное положение (на месте)
           "100%": { transform: "translateY(-100%)" }, // Положение через 2 секунды (-100% по вертикали)
@@ -98,6 +103,7 @@ module.exports = {
         },
       },
       animation: {
+        "move-left": "move-left 10s linear forwards", // Анимация движения вверх в течение 2 секунд
         "most-pulse": "most-pulse 4s ease-out infinite",
         "move-up": "move-up 10s linear forwards", // Анимация движения вверх в течение 2 секунд
         "accordion-down": "accordion-down 0.2s ease-out",
