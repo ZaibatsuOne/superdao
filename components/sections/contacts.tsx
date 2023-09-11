@@ -2,7 +2,7 @@ import { listContacts, listWordsOfContacts } from "@/data/data";
 
 import { FC } from "react";
 import Image from "next/image";
-import SectionTitle from "./ui/section-title";
+import SectionTitle from "../ui/section-title";
 
 const Contacts: FC = () => {
   return (

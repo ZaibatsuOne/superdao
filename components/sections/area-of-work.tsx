@@ -2,7 +2,8 @@
 
 import { FC, useEffect, useState } from "react";
 
-import SectionTitle from "./ui/section-title";
+import BackBlur from "../ui/back-blur";
+import SectionTitle from "../ui/section-title";
 import { listWorkArea } from "@/data/data";
 
 const AreaOfWork: FC = () => {

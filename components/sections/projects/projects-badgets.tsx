@@ -2,7 +2,7 @@
 
 import { FC, useRef } from "react";
 
-import { Badge } from "../ui/badge";
+import { Badge } from "../../ui/badge";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { projectCategory } from "@/data/data";

@@ -1,11 +1,12 @@
-import AreaOfWork from "@/components/area-of-work";
-import CompanyCarousel from "@/components/company-carousel";
-import Contacts from "@/components/contacts";
-import Hero from "@/components/hero";
-import PresentSection from "@/components/present/present-section";
-import Projects from "@/components/projects/projects";
-import SubscribeCard from "@/components/subscribe-card";
-import WorkWith from "@/components/work-with";
+import AreaOfWork from "@/components/sections/area-of-work";
+import CompanyCarousel from "@/components/sections/companies/company-carousel";
+import Contacts from "@/components/sections/contacts";
+import Hero from "@/components/sections/hero";
+import PresentSection from "@/components/sections/present/present-section";
+import Press from "@/components/sections/press/press";
+import Projects from "@/components/sections/projects/projects";
+import SubscribeCard from "@/components/sections/subscribe-card";
+import WorkWith from "@/components/sections/work-with";
 
 export default function Home() {
   return (
@@ -14,10 +15,11 @@ export default function Home() {
       <Projects />
       <AreaOfWork />
       <PresentSection />
-      {/* <WorkWith /> */}
+      <WorkWith />
       <Contacts />
-      {/* <SubscribeCard /> */}
+      <SubscribeCard />
       <CompanyCarousel />
+      <Press />
     </main>
   );
 }

@@ -1,4 +1,5 @@
 import {
+  IBlogPreview,
   ILink,
   IPresentTabs,
   IWordsContact,
@@ -6,7 +7,9 @@ import {
 } from "@/types/types";
 
 import AllianceLogo from "@/public/companies/Alliance.svg";
+import Blockworks from "@/public/blog/Blockworks.svg";
 import Circle from "@/public/companies/Circle.svg";
+import Decrypt from "@/public/blog/Decrypt.svg";
 import Digital from "@/public/companies/Digital.svg";
 import Fifty from "@/public/companies/Fifty.svg";
 import Fika from "@/public/companies/Fika.svg";
@@ -17,6 +20,7 @@ import Pear from "@/public/companies/Pear.svg";
 import Protocol from "@/public/companies/Protocol.svg";
 import Shima from "@/public/companies/Shima.svg";
 import { StaticImageData } from "next/image";
+import Techcrunch from "@/public/blog/TechCrunch-logo 1.svg";
 import Ventu from "@/public/companies/Ventu.svg";
 import blueStar from "@/public/stars/blue-star.svg";
 import ensIcon from "@/public/Avatar.svg";
@@ -179,5 +183,27 @@ export const listWordsOfContacts: IWordsContact[] = [
   },
   {
     word: "Guides",
+  },
+];
+
+export const listBlogPreview: IBlogPreview[] = [
+  {
+    id: 1,
+    logo: Decrypt,
+    title:
+      "Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform",
+    desc: "Superdao aims to make it easier for online communities to build and launch DAOs",
+  },
+  {
+    id: 2,
+    logo: Blockworks,
+    title: "The Y Combinator of Web3 Attracts Record Number of DAO Startups",
+    desc: "DAOs and related startups made up an “overwhelming number of applicants” for a Web3 accelerator’s cohort this year",
+  },
+  {
+    id: 3,
+    logo: Techcrunch,
+    title: "VC-backed DAO startups are racing to define what DAOs actually are",
+    desc: "Not all 'decentralized autonomous organizations' are autonomous... or decentralized",
   },
 ];

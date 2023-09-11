@@ -19,3 +19,10 @@ export interface IWordsContact {
   word: string;
   image?: StaticImageData | null | undefined;
 }
+
+export interface IBlogPreview {
+  id: number;
+  logo: StaticImageData;
+  title: string;
+  desc: string;
+}

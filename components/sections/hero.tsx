@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { FC } from "react";
 
 const Hero: FC = () => {

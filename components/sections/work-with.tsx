@@ -1,6 +1,7 @@
+import BackBlur from "../ui/back-blur";
 import { FC } from "react";
 import Image from "next/image";
-import SectionTitle from "./ui/section-title";
+import SectionTitle from "../ui/section-title";
 import { listWorkWith } from "@/data/data";
 
 const WorkWith: FC = () => {
@@ -17,8 +18,8 @@ const WorkWith: FC = () => {
           </div>
         ))}
       </ul>
-      <div className="absolute w-1/2 h-1/2 rounded-full bg-white translate-y-1/2 translate-x-1/2 -z-10 blur-[120px] opacity-20" />
-      <div className="absolute w-full h-full bg-workWith-stars bg-no-repeat translate-x-[60%] -top-10" />
+      <BackBlur />
+      <div className="absolute w-1/2 h-full bg-workWith-stars bg-no-repeat -right-40 -top-10" />
     </section>
   );
 };

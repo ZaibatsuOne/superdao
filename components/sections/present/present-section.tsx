@@ -2,11 +2,11 @@
 
 import { FC, useEffect, useState } from "react";
 
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { Play } from "lucide-react";
 import PresentImages from "./present-images";
 import PresentTabs from "./present-tabs";
-import SectionTitle from "../ui/section-title";
+import SectionTitle from "../../ui/section-title";
 import { listOFTools } from "@/data/data";
 
 const PresentSection: FC = () => {

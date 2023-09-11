@@ -2,14 +2,15 @@
 
 import { firstListCompanies, secondListCompanies } from "@/data/data";
 
+import BackBlur from "../../ui/back-blur";
 import CompanyItem from "./company-item";
 import { FC } from "react";
 import Marquee from "react-fast-marquee";
-import SectionTitle from "./ui/section-title";
+import SectionTitle from "../../ui/section-title";
 
 const CompanyCarousel: FC = () => {
   return (
-    <section className="flex flex-col gap-14 my-20">
+    <section className="relative flex flex-col gap-14 my-20">
       <div className="relative container">
         <SectionTitle variant="short">Backed by</SectionTitle>
       </div>
@@ -41,6 +42,8 @@ const CompanyCarousel: FC = () => {
           </Marquee>
         </ul>
       </section>
+      <BackBlur />
+      <div className="absolute w-[70px] right-1/3 h-full bg-present-stars bg-no-repeat -top-16 " />
     </section>
   );
 };

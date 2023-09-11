@@ -1,8 +1,9 @@
 import Arrows from "@/components/ui/arrows";
+import BackBlur from "../../ui/back-blur";
 import { FC } from "react";
 import ProjectsBadges from "./projects-badgets";
 import ProjectsBanner from "./projects-banner";
-import SectionTitle from "../ui/section-title";
+import SectionTitle from "../../ui/section-title";
 
 const Projects: FC = () => {
   return (
@@ -12,6 +13,7 @@ const Projects: FC = () => {
       <ProjectsBadges />
       <ProjectsBanner />
       <div className="absolute bg-project-stars w-24 h-24 bg-no-repeat left-[85px] top-5" />
+      <BackBlur />
     </section>
   );
 };
