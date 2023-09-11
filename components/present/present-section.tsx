@@ -26,14 +26,16 @@ const PresentSection: FC = () => {
       <SectionTitle variant="medium">All the tools in one app</SectionTitle>
       <PresentTabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <PresentImages currentTab={currentTab} />
-      <Button
-        size="lg"
-        variant="primary"
-        className="gap-2 bg-opacity-10 text-yellow"
-      >
-        <Play />
-        <span>Watch video</span>
-      </Button>
+      <div>
+        <Button
+          size="lg"
+          variant="primary"
+          className="gap-2 bg-opacity-10 text-yellow"
+        >
+          <Play />
+          <span>Watch video</span>
+        </Button>
+      </div>
     </section>
   );
 };

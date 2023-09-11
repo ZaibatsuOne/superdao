@@ -14,3 +14,8 @@ export interface IWorkWithCard {
   name: string;
   image: StaticImageData;
 }
+
+export interface IWordsContact {
+  word: string;
+  image?: StaticImageData | null | undefined;
+}

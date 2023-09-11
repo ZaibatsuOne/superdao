@@ -1,19 +1,35 @@
-import { ILink, IPresentTabs, IWorkWithCard } from "@/types/types";
+import {
+  ILink,
+  IPresentTabs,
+  IWordsContact,
+  IWorkWithCard,
+} from "@/types/types";
 
+import { StaticImageData } from "next/image";
+import blueStar from "@/public/stars/blue-star.svg";
 import ensIcon from "@/public/Avatar.svg";
 //Work with section icons
 import ethIcon from "@/public/Icon_ethereum.svg";
+import firstContact from "@/public/contacts/1.png";
 //TABS
 import firstImageTab from "@/public/Group 5560.png";
+import fiveContact from "@/public/contacts/5.png";
 import fiveimageTab from "@/public/original-e9a9e787a0e0a42c573ffb56ec009e80.png";
+import fourContact from "@/public/contacts/4.png";
 import fourImageTab from "@/public/original-ba3be2b0a4869de174cb7466145482f1.png";
 import gnosisIcon from "@/public/Frame 5608.svg";
 import openseaIcon from "@/public/icon_opensea.svg";
+import orangeStar from "@/public/stars/orange-star.svg";
 import polygonIcon from "@/public/Icon_polygon.svg";
+import purpleStar from "@/public/stars/purple-star.svg";
+import secondContact from "@/public/contacts/2.png";
 import secondImageTab from "@/public/original-9d4b4ebbe62b1e6b1223e87d5aebe4ee.png";
 import sixImageTab from "@/public/original-92402fa76e345ba7cb2586fdeb5c66c2.png";
 import snapshotIcon from "@/public/Frame 2091.svg";
+import thirdContact from "@/public/contacts/3.png";
 import thirdImageTab from "@/public/d535a71ecf0c1f128a39bbba21a80047.jpg";
+import yellowLightStar from "@/public/stars/yellowLight-star.svg";
+import yellowStar from "@/public/stars/yellow-star.svg";
 
 export const navbarLink: ILink[] = [
   {
@@ -91,5 +107,49 @@ export const listWorkWith: IWorkWithCard[] = [
   {
     name: "OpenSea",
     image: openseaIcon,
+  },
+];
+
+export const listContacts: StaticImageData[] = [
+  firstContact,
+  secondContact,
+  thirdContact,
+  fourContact,
+  fiveContact,
+];
+
+export const listWordsOfContacts: IWordsContact[] = [
+  {
+    word: "Success managers",
+    image: blueStar,
+  },
+  {
+    word: "Knowledge base",
+    image: purpleStar,
+  },
+  {
+    word: "Chat support",
+    image: yellowStar,
+  },
+  {
+    word: "Tutorials",
+    image: yellowLightStar,
+  },
+  {
+    word: "Templates",
+  },
+  {
+    word: "Smart Contract development",
+    image: orangeStar,
+  },
+  {
+    word: "Events",
+  },
+  {
+    word: "Education",
+    image: yellowLightStar,
+  },
+  {
+    word: "Guides",
   },
 ];
