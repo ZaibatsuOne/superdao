@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import { Play } from "lucide-react";
 import PresentImages from "./present-images";
 import PresentTabs from "./present-tabs";
+import SectionTitle from "../ui/section-title";
 import { listOFTools } from "@/data/data";
 
 const PresentSection: FC = () => {
@@ -20,9 +21,9 @@ const PresentSection: FC = () => {
   }, []);
 
   return (
-    <section className="relative container flex flex-col gap-8 items-center justify-center">
+    <section className="relative container flex flex-col gap-8 text-center">
       <div className="absolute w-full h-full bg-present-stars bg-no-repeat -top-10 translate-x-[15%]" />
-      <h2>All the tools in one app</h2>
+      <SectionTitle variant="medium">All the tools in one app</SectionTitle>
       <PresentTabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <PresentImages currentTab={currentTab} />
       <Button
