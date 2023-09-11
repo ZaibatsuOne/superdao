@@ -7,7 +7,7 @@ const SectionTitle: FC<PropsWithChildren<Props>> = ({ variant, children }) => {
   const switchBrush = (variant: string) => {
     if (variant === "short") {
       return (
-        <div className="absolute w-full h-full bg-workWith-brush bg-no-repeat translate-x-1/3 top-7 -z-10" />
+        <div className="absolute w-1/2 h-full bg-workWith-brush bg-no-repeat translate-x-[70%] top-7 -z-10" />
       );
     } else if (variant === "medium") {
       return (
