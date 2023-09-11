@@ -18,7 +18,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         "project-stars": "url('/project-stars.svg')",
+        "areaWork-stars": "url('/areaWork-stars.svg')",
         "hero-brush": "url('/hero-brush.png')",
+        "areaWork-brush": "url('/areaWork-brush.png')",
         "project-brush": "url('/project-brush.png')",
       },
       colors: {

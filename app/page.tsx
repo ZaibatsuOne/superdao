@@ -1,5 +1,6 @@
 import AreaOfWork from "@/components/area-of-work";
 import Hero from "@/components/hero";
+import PresentSection from "@/components/present-section";
 import Projects from "@/components/projects/projects";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <AreaOfWork />
+      <PresentSection />
     </main>
   );
 }
