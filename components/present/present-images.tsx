@@ -22,7 +22,7 @@ const PresentImages: FC<Props> = ({ currentTab }) => {
       </div>
       <div
         className={cn(
-          "absolute inset-0 -z-10 w-full h-full blur-3xl bg-white opacity-10"
+          "absolute inset-0 -z-10 w-full h-1/2 blur-3xl bg-white opacity-10"
         )}
       />
     </div>

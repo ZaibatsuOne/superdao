@@ -20,9 +20,12 @@ module.exports = {
         "project-stars": "url('/project-stars.svg')",
         "areaWork-stars": "url('/areaWork-stars.svg')",
         "present-stars": "url('/present-stars.svg')",
+        "workWith-stars": "url('/workWith-stars.svg')",
+
         "hero-brush": "url('/hero-brush.png')",
         "areaWork-brush": "url('/areaWork-brush.png')",
         "project-brush": "url('/project-brush.png')",
+        "workWith-brush": "url('/workWith-brush.png')",
       },
       colors: {
         blue: "#4BE1F4",

@@ -9,3 +9,8 @@ export interface IPresentTabs {
   name: string;
   image: StaticImageData;
 }
+
+export interface IWorkWithCard {
+  name: string;
+  image: StaticImageData;
+}
