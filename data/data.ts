@@ -32,3 +32,13 @@ export const projectCategory: string[] = [
   "DeFi DAO",
   "+ More",
 ];
+
+export const listWorkArea: string[] = [
+  "Organisation design",
+  "Smart contract development",
+  "Fundraising",
+  "Launch marketing",
+  "Member onboarding",
+  "Contributor management",
+  "DAO operations",
+];
