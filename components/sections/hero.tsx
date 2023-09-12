@@ -9,7 +9,7 @@ const Hero: FC = () => {
     <section className="container pt-[130px] flex flex-col gap-14 items-center text-center px-72">
       <div className="relative flex flex-col gap-4">
         <motion.h1
-          initial={{ opacity: 0, scale: 0 }}
+          initial={{ opacity: 0, scale: 0.4 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2 }}
         >
@@ -35,7 +35,7 @@ const Hero: FC = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 5 }}
+        transition={{ duration: 5, delay: 1 }}
         className="relative"
       >
         <div className="absolute bg-yellow w-full h-full rounded-2xl -z-10 blur-2xl animate-pulse" />

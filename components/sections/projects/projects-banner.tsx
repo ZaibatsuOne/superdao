@@ -11,7 +11,7 @@ const ProjectsBanner: FC = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 10 }}
+      transition={{ duration: 4, delay: 0.4 }}
       className="relative"
     >
       <div className="h-[490px] w-full rounded-[30px] bg-black overflow-hidden ">

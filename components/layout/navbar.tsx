@@ -7,9 +7,15 @@ import Link from "next/link";
 import Logo from "@/public/logo.svg";
 import { motion } from "framer-motion";
 import { navbarLink } from "@/data/data";
+
 const Navbar: FC = () => {
   return (
-    <header className="mx-auto container py-8 flex items-center justify-between">
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 7 }}
+      className="mx-auto container py-8 flex items-center justify-between"
+    >
       <div className="flex items-center gap-2">
         <Image src={Logo} alt="Superdao logo" />
         <h4 className="font-semibold text-2xl">Superdao</h4>
@@ -26,7 +32,7 @@ const Navbar: FC = () => {
       <Button variant="secondary" size="sm">
         Login
       </Button>
-    </header>
+    </motion.header>
   );
 };
 

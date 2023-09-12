@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const SubscribeCard: FC = () => {
   return (
-    <section className="subscribe_card hover:shadow-[#121E28] hover:shadow-2xl select-none">
+    <section className="subscribe_card hover:shadow-[#121E28] hover:shadow-2xl select-none  ">
       <div className="subscribe_card__bg" />
       <div className="relative z-10 flex flex-col gap-16">
         <div className="flex flex-col gap-6 text-center">
