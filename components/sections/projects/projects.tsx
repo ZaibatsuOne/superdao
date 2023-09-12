@@ -1,9 +1,12 @@
+"use client";
+
 import Arrows from "@/components/ui/arrows";
 import BackBlur from "../../ui/back-blur";
 import { FC } from "react";
 import ProjectsBadges from "./projects-badgets";
 import ProjectsBanner from "./projects-banner";
 import SectionTitle from "../../ui/section-title";
+import { motion } from "framer-motion";
 
 const Projects: FC = () => {
   return (
@@ -12,7 +15,11 @@ const Projects: FC = () => {
       <SectionTitle variant="medium">Ready for every project</SectionTitle>
       <ProjectsBadges />
       <ProjectsBanner />
-      <div className="absolute bg-project-stars w-24 h-24 bg-no-repeat left-[85px] top-5" />
+      <motion.div
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ repeat: Infinity, duration: 1 }}
+        className="absolute bg-project-stars w-24 h-24 bg-no-repeat left-[85px] top-5"
+      />
       <BackBlur />
     </section>
   );

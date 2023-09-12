@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const SubscribeCard: FC = () => {
   return (
-    <section className="relative container w-[80%] h-96 py-10 bg-[#121E28] rounded-[30px] border-2 border-[#2A3744] bg-lights bg-cover bg-no-repeat">
+    <section className="relative container w-[80%] h-96 py-10 bg-[#121E28] rounded-[30px] border-2 border-[#2A3744] bg-lights hover:bg-blend-luminosity bg-cover bg-no-repeat">
       <div className="relative z-10 flex flex-col gap-16">
         <div className="flex flex-col gap-6 text-center">
           <h2>Weekly digest</h2>

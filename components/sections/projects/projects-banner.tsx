@@ -1,11 +1,19 @@
+"use client";
+
 import Artworks from "@/public/Artworks.png";
 import { FC } from "react";
 import Image from "next/image";
 import Slug from "@/components/ui/slug";
+import { motion } from "framer-motion";
 
 const ProjectsBanner: FC = () => {
   return (
-    <div className="relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 10 }}
+      className="relative"
+    >
       <div className="h-[490px] w-full rounded-[30px] bg-black overflow-hidden ">
         <Image
           src={Artworks}
@@ -19,7 +27,7 @@ const ProjectsBanner: FC = () => {
         />
       </div>
       <Slug>1000+ projects launched on Superdao</Slug>
-    </div>
+    </motion.div>
   );
 };
 

@@ -45,16 +45,38 @@ const ProjectsBadges: FC = () => {
     }
   };
 
+  const pVariants = {
+    hidden: {
+      y: 250,
+      opacity: 0,
+    },
+    visible: (i: number) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.4 * i,
+      },
+    }),
+  };
   return (
     <ul className="flex  gap-6 items-center flex-wrap justify-center px-20">
       {projectCategory.map((category, index) => (
-        <motion.li className="relative" key={index} whileHover="hover">
+        <motion.li
+          variants={pVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          custom={index}
+          className="relative"
+          key={index}
+          whileHover="hover"
+        >
           <Badge className={cn("cursor-default", badgeTextColor(index))}>
             {category}
           </Badge>
           <div
             className={cn(
-              "absolute top-0 w-full h-full -z-10 opacity-10 blur-lg",
+              "absolute top-0 w-full h-full -z-10 opacity-5 blur-lg",
               badgeBgColor(index)
             )}
           />
