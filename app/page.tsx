@@ -2,6 +2,7 @@ import AreaOfWork from "@/components/sections/area-of-work";
 import CompanyCarousel from "@/components/sections/companies/company-carousel";
 import Contacts from "@/components/sections/contacts";
 import Hero from "@/components/sections/hero";
+import Podcasts from "@/components/sections/podcasts/podcasts";
 import PresentSection from "@/components/sections/present/present-section";
 import Press from "@/components/sections/press/press";
 import Projects from "@/components/sections/projects/projects";
@@ -20,6 +21,7 @@ export default function Home() {
       <SubscribeCard />
       <CompanyCarousel />
       <Press />
+      <Podcasts />
     </main>
   );
 }

@@ -8,6 +8,8 @@ import PresentImages from "./present-images";
 import PresentTabs from "./present-tabs";
 import SectionTitle from "../../ui/section-title";
 import { listOFTools } from "@/data/data";
+import { motion } from "framer-motion";
+import { starAnimation } from "@/constants/animation.constants";
 
 const PresentSection: FC = () => {
   const [currentTab, setCurrentTab] = useState(0);
@@ -22,7 +24,11 @@ const PresentSection: FC = () => {
 
   return (
     <section className="relative container flex flex-col gap-8 text-center">
-      <div className="absolute w-full h-full bg-present-stars bg-no-repeat -top-10 translate-x-[15%]" />
+      <motion.div
+        variants={starAnimation}
+        animate="animate"
+        className="absolute w-full h-full bg-present-stars bg-no-repeat -top-10 translate-x-[15%]"
+      />
       <SectionTitle variant="medium">All the tools in one app</SectionTitle>
       <PresentTabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <PresentImages currentTab={currentTab} />

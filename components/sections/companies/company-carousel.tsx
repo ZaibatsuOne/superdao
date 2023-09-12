@@ -7,6 +7,8 @@ import CompanyItem from "./company-item";
 import { FC } from "react";
 import Marquee from "react-fast-marquee";
 import SectionTitle from "../../ui/section-title";
+import { motion } from "framer-motion";
+import { starAnimation } from "@/constants/animation.constants";
 
 const CompanyCarousel: FC = () => {
   return (
@@ -43,7 +45,11 @@ const CompanyCarousel: FC = () => {
         </ul>
       </section>
       <BackBlur />
-      <div className="absolute w-[70px] right-1/3 h-full bg-present-stars bg-no-repeat -top-16 " />
+      <motion.div
+        variants={starAnimation}
+        animate="animate"
+        className="absolute w-[70px] right-1/3 h-full bg-present-stars bg-no-repeat -top-16 "
+      />
     </section>
   );
 };

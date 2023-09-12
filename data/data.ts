@@ -1,5 +1,5 @@
 import {
-  IBlogPreview,
+  ICardPreview,
   ILink,
   IPresentTabs,
   IWordsContact,
@@ -186,7 +186,7 @@ export const listWordsOfContacts: IWordsContact[] = [
   },
 ];
 
-export const listBlogPreview: IBlogPreview[] = [
+export const listBlogPreview: ICardPreview[] = [
   {
     id: 1,
     logo: Decrypt,

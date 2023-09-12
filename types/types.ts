@@ -20,7 +20,7 @@ export interface IWordsContact {
   image?: StaticImageData | null | undefined;
 }
 
-export interface IBlogPreview {
+export interface ICardPreview {
   id: number;
   logo: StaticImageData;
   title: string;

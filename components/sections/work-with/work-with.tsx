@@ -5,6 +5,7 @@ import { FC } from "react";
 import SectionTitle from "@/components/ui/section-title";
 import WorkWithList from "./work-with-list";
 import { motion } from "framer-motion";
+import { starAnimation } from "@/constants/animation.constants";
 
 const WorkWith: FC = () => {
   return (
@@ -13,11 +14,8 @@ const WorkWith: FC = () => {
       <WorkWithList />
       <BackBlur />
       <motion.div
-        animate={{ opacity: [0, 1, 0, 1, 0] }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-        }}
+        variants={starAnimation}
+        animate="animate"
         className="absolute w-1/2 h-full bg-workWith-stars bg-no-repeat -right-40 -top-10"
       />
     </section>
