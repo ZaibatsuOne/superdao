@@ -1,10 +1,12 @@
+"use client";
+
 import { Button } from "../ui/button";
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.svg";
+import { motion } from "framer-motion";
 import { navbarLink } from "@/data/data";
-
 const Navbar: FC = () => {
   return (
     <header className="mx-auto container py-8 flex items-center justify-between">

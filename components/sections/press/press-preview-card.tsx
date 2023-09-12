@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FC } from "react";
 import { IBlogPreview } from "@/types/types";
@@ -5,7 +7,7 @@ import Image from "next/image";
 import { MoveRight } from "lucide-react";
 import { bgPreviewCard } from "@/helpers/func";
 import { cn } from "@/lib/utils";
-
+import { motion } from "framer-motion";
 interface Props {
   blog: IBlogPreview;
   index: number;
@@ -14,9 +16,10 @@ const PressPreviewCard: FC<Props> = ({ blog, index }) => {
   const { desc, title, logo } = blog;
 
   return (
-    <article
+    <motion.article
+      whileHover={{ scale: 1.05 }}
       className={cn(
-        "flex flex-col gap-5 w-full h-96 rounded-[20px] py-7 px-7 hover:mix-blend-color-dodge cursor-pointer",
+        "flex flex-col gap-5 w-full h-96 rounded-[20px] hover:mix-blend-color-dodge py-7 px-7 cursor-pointer",
         bgPreviewCard(index)
       )}
     >
@@ -31,7 +34,7 @@ const PressPreviewCard: FC<Props> = ({ blog, index }) => {
           <MoveRight />
         </Button>
       </div>
-    </article>
+    </motion.article>
   );
 };
 

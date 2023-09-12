@@ -12,7 +12,7 @@ const CompanyCarousel: FC = () => {
   return (
     <section className="relative flex flex-col gap-14 my-20">
       <div className="relative container">
-        <SectionTitle variant="short">Backed by</SectionTitle>
+        <SectionTitle variant="none">Backed by</SectionTitle>
       </div>
       <section className="flex flex-col gap-5">
         <ul>
