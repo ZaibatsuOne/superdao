@@ -10,9 +10,7 @@ const Contacts: FC = () => {
       <SectionTitle variant="medium">Help at every step</SectionTitle>
       <div className="flex items-center gap-6 justify-center">
         {listContacts.map((contact) => (
-          <div className="w-40 h-40">
-            <Image src={contact} alt="contact image" className="rounded-3xl" />
-          </div>
+          <Image src={contact} alt="contact image" className="rounded-3xl" />
         ))}
       </div>
       <div className="flex gap-5 flex-wrap px-28 items-center justify-center">

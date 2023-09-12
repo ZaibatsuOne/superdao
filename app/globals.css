@@ -90,6 +90,19 @@
   .link {
     @apply font-semibold text-xl hover:text-orange;
   }
+  .subscribe_card {
+    @apply relative container w-[80%] h-96 py-10 bg-[#121E28] rounded-[30px] border-2 border-[#2A3744] overflow-hidden;
+  }
+  .subscribe_card__bg {
+    @apply absolute inset-0 bg-lights w-full h-full;
+  }
+
+  .subscribe_card:hover .subscribe_card__bg {
+    @apply scale-110 transition-transform ease-in-out duration-500;
+  }
+  .subscribe_card:not(:hover) .subscribe_card__bg {
+    @apply scale-100 transition-transform ease-in-out duration-500;
+  }
 }
 @layer utilities {
   .container {

@@ -6,7 +6,7 @@ import PresentSection from "@/components/sections/present/present-section";
 import Press from "@/components/sections/press/press";
 import Projects from "@/components/sections/projects/projects";
 import SubscribeCard from "@/components/sections/subscribe-card";
-import WorkWith from "@/components/sections/work-with";
+import WorkWith from "@/components/sections/work-with/work-with";
 
 export default function Home() {
   return (
