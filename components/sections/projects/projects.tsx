@@ -1,11 +1,11 @@
 "use client";
 
-import Arrows from "@/components/ui/arrows";
-import BackBlur from "../../ui/back-blur";
+import Arrows from "@/shared/ui/arrows/arrows";
+import BackBlur from "../../../shared/ui/back-blur/back-blur";
 import { FC } from "react";
 import ProjectsBadges from "./projects-badgets";
 import ProjectsBanner from "./projects-banner";
-import SectionTitle from "../../ui/section-title";
+import SectionTitle from "../../../shared/ui/section-title/section-title";
 import { motion } from "framer-motion";
 
 const Projects: FC = () => {

@@ -2,11 +2,11 @@
 
 import { firstListCompanies, secondListCompanies } from "@/data/data";
 
-import BackBlur from "../../ui/back-blur";
+import BackBlur from "../../../shared/ui/back-blur/back-blur";
 import CompanyItem from "./company-item";
 import { FC } from "react";
 import Marquee from "react-fast-marquee";
-import SectionTitle from "../../ui/section-title";
+import SectionTitle from "../../../shared/ui/section-title/section-title";
 import { motion } from "framer-motion";
 import { starAnimation } from "@/constants/animation.constants";
 

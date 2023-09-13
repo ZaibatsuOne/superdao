@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/ui/button/button";
 import { FC } from "react";
 import { MoveRight } from "lucide-react";
 import PressPreviewList from "./press-preview-list";
-import SectionTitle from "@/components/ui/section-title";
+import SectionTitle from "@/shared/ui/section-title/section-title";
 const Press: FC = () => {
   return (
     <section className="container flex flex-col gap-8">

@@ -2,8 +2,8 @@
 
 import { FC, useEffect, useState } from "react";
 
-import BackBlur from "../ui/back-blur";
-import SectionTitle from "../ui/section-title";
+import BackBlur from "../../shared/ui/back-blur/back-blur";
+import SectionTitle from "../../shared/ui/section-title/section-title";
 import { listWorkArea } from "@/data/data";
 import { motion } from "framer-motion";
 import { starAnimation } from "@/constants/animation.constants";

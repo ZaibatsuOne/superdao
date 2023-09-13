@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/ui/button/button";
 import { FC } from "react";
 import { MoveRight } from "lucide-react";
 import PodcastsPreviewCard from "./podcasts-preview-card";
 import PodcastsPreviewList from "./podcasts-preview-list";
-import SectionTitle from "@/components/ui/section-title";
+import SectionTitle from "@/shared/ui/section-title/section-title";
 
 const Podcasts: FC = () => {
   return (

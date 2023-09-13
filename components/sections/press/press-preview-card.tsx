@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/ui/button/button";
 import { FC } from "react";
 import { IBlogPreview } from "@/types/types";
 import Image from "next/image";

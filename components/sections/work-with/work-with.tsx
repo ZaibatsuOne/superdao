@@ -1,8 +1,8 @@
 "use client";
 
-import BackBlur from "@/components/ui/back-blur";
+import BackBlur from "@/shared/ui/back-blur/back-blur";
 import { FC } from "react";
-import SectionTitle from "@/components/ui/section-title";
+import SectionTitle from "@/shared/ui/section-title/section-title";
 import WorkWithList from "./work-with-list";
 import { motion } from "framer-motion";
 import { starAnimation } from "@/constants/animation.constants";

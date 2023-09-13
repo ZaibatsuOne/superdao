@@ -2,11 +2,11 @@
 
 import { FC, useEffect, useState } from "react";
 
-import { Button } from "../../ui/button";
+import { Button } from "../../../shared/ui/button/button";
 import { Play } from "lucide-react";
 import PresentImages from "./present-images";
 import PresentTabs from "./present-tabs";
-import SectionTitle from "../../ui/section-title";
+import SectionTitle from "../../../shared/ui/section-title/section-title";
 import { listOFTools } from "@/data/data";
 import { motion } from "framer-motion";
 import { starAnimation } from "@/constants/animation.constants";
